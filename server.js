@@ -16,3 +16,7 @@ app.get("/echo/:text",(req,res)=>{
     const {text}  = req.params;
     return res.status(200).json({message : "Echo Route",data : text})
 })
+
+app.get("/newroute",(req,res)=>{
+    return res.status(200).json({message : "Testing CI/CD"})
+})
